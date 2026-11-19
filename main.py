@@ -15,7 +15,7 @@ FICHIER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "donnees.json
 
 
 # ===========================================================================
-# Fonctions de saisie (contrôle des entrées)
+# Les Fonctions de saisie (contrôle des entrées)
 # ===========================================================================
 def lire_texte(message):
     while True:
