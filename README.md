@@ -2,14 +2,6 @@
 
 Mini-projet Python : application de gestion en console (programmation orientée objet, sauvegarde JSON).
 
-## Sujet
-
-Sujet 1 du devoir : gérer les **ingrédients et leurs stocks**, les **produits et leurs recettes**, les **clients** (étudiants et personnel) et les **commandes**.
-
-## Participants
-
-- [Nom Prénom]
-
 ## Fonctionnalités
 
 - Gestion des ingrédients, des stocks, du réapprovisionnement et des alertes de stock.
@@ -21,27 +13,6 @@ Sujet 1 du devoir : gérer les **ingrédients et leurs stocks**, les **produits 
 - Recherche, tri, chiffre d'affaires, produits les plus demandés, historique des opérations.
 - Sauvegarde automatique dans `donnees.json`.
 
-## Prérequis
-
-- Python 3.10 ou plus récent (aucune bibliothèque externe à installer).
-
-## Lancer l'application
-
-1. Ouvrir le dossier du projet dans VS Code.
-2. Ouvrir un terminal (`Terminal > New Terminal`).
-3. Lancer :
-
-```
-python main.py
-```
-
-(sur Mac ou Linux, utiliser `python3 main.py`)
-
-Le programme charge `donnees.json` au démarrage et le met à jour après chaque modification.
-
-- Pour **revenir aux données de démonstration** d'origine : `git restore donnees.json`.
-- Pour **repartir de zéro** : supprimer `donnees.json` ; il sera recréé au premier enregistrement.
-- Si `donnees.json` est invalide, le programme affiche l'erreur et s'arrête **sans modifier le fichier**.
 
 ## Fichiers du projet
 
