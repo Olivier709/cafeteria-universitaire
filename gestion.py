@@ -3,7 +3,7 @@ gestion.py
 ----------
 La classe Cafeteria : elle contient toutes les données (ingrédients, produits,
 clients, commandes, historique) et applique les règles de gestion.
-Aucun print / input ici : l'affichage est fait dans main.py.
+Aucun print / input ici : l'affichage est fait dans main.py...
 """
 
 from modeles import (
