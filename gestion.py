@@ -15,7 +15,7 @@ from modeles import (
 def _ajouter_sans_doublon(dictionnaire, objet):
     """Ajoute un objet dans un dictionnaire, en refusant les identifiants en double."""
     if objet.identifiant in dictionnaire:
-        raise ValueError(f"Identifiant en double dans le fichier : {objet.identifiant}")
+        raise ValueError(f"Identifiant en double dans le fichier : {objet.identifiant}")//
     dictionnaire[objet.identifiant] = objet
 
 
