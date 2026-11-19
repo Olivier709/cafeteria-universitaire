@@ -1,0 +1,361 @@
+{
+  "compteurs": {
+    "ingredient": 10,
+    "produit": 7,
+    "client": 4,
+    "commande": 6
+  },
+  "ingredients": [
+    {
+      "identifiant": 1,
+      "nom": "Pain",
+      "unite": "unité",
+      "stock": 35,
+      "seuil_alerte": 10
+    },
+    {
+      "identifiant": 2,
+      "nom": "Poulet",
+      "unite": "g",
+      "stock": 2520,
+      "seuil_alerte": 500
+    },
+    {
+      "identifiant": 3,
+      "nom": "Fromage",
+      "unite": "g",
+      "stock": 1360,
+      "seuil_alerte": 300
+    },
+    {
+      "identifiant": 4,
+      "nom": "Oeufs",
+      "unite": "unité",
+      "stock": 53,
+      "seuil_alerte": 12
+    },
+    {
+      "identifiant": 5,
+      "nom": "Lait",
+      "unite": "ml",
+      "stock": 7300,
+      "seuil_alerte": 1500
+    },
+    {
+      "identifiant": 6,
+      "nom": "Café moulu",
+      "unite": "g",
+      "stock": 186,
+      "seuil_alerte": 200
+    },
+    {
+      "identifiant": 7,
+      "nom": "Sucre",
+      "unite": "g",
+      "stock": 1940,
+      "seuil_alerte": 300
+    },
+    {
+      "identifiant": 8,
+      "nom": "Farine",
+      "unite": "g",
+      "stock": 4680,
+      "seuil_alerte": 1000
+    },
+    {
+      "identifiant": 9,
+      "nom": "Oranges",
+      "unite": "unité",
+      "stock": 44,
+      "seuil_alerte": 10
+    }
+  ],
+  "produits": [
+    {
+      "identifiant": 1,
+      "nom": "Sandwich poulet",
+      "prix": 175,
+      "recette": {
+        "1": 1,
+        "2": 120,
+        "3": 30
+      }
+    },
+    {
+      "identifiant": 2,
+      "nom": "Omelette",
+      "prix": 125,
+      "recette": {
+        "4": 3,
+        "3": 20,
+        "1": 1
+      }
+    },
+    {
+      "identifiant": 3,
+      "nom": "Café au lait",
+      "prix": 75,
+      "recette": {
+        "6": 12,
+        "5": 150,
+        "7": 10
+      }
+    },
+    {
+      "identifiant": 4,
+      "nom": "Crêpe",
+      "prix": 90,
+      "recette": {
+        "8": 80,
+        "4": 1,
+        "5": 100,
+        "7": 10
+      }
+    },
+    {
+      "identifiant": 5,
+      "nom": "Jus d'orange",
+      "prix": 60,
+      "recette": {
+        "9": 3
+      }
+    },
+    {
+      "identifiant": 6,
+      "nom": "Sandwich fromage",
+      "prix": 120,
+      "recette": {
+        "1": 1,
+        "3": 50
+      }
+    }
+  ],
+  "clients": [
+    {
+      "type": "etudiant",
+      "identifiant": 1,
+      "nom": "Marie Joseph"
+    },
+    {
+      "type": "etudiant",
+      "identifiant": 2,
+      "nom": "Jean Pierre"
+    },
+    {
+      "type": "personnel",
+      "identifiant": 3,
+      "nom": "Claire Louis"
+    }
+  ],
+  "commandes": [
+    {
+      "identifiant": 1,
+      "client_id": 1,
+      "lignes": {
+        "1": 2,
+        "3": 1
+      },
+      "statut": "livree",
+      "total": 340.0,
+      "besoins_debites": {
+        "1": 2,
+        "2": 240,
+        "3": 60,
+        "6": 12,
+        "5": 150,
+        "7": 10
+      },
+      "date": "2026-11-19 07:55:25"
+    },
+    {
+      "identifiant": 2,
+      "client_id": 2,
+      "lignes": {
+        "2": 1,
+        "5": 2
+      },
+      "statut": "prete",
+      "total": 196.0,
+      "besoins_debites": {
+        "4": 3,
+        "3": 20,
+        "1": 1,
+        "9": 6
+      },
+      "date": "2026-11-19 07:55:25"
+    },
+    {
+      "identifiant": 3,
+      "client_id": 3,
+      "lignes": {
+        "4": 4,
+        "1": 2,
+        "3": 1
+      },
+      "statut": "en_preparation",
+      "total": 706.5,
+      "besoins_debites": {
+        "8": 320,
+        "4": 4,
+        "5": 550,
+        "7": 50,
+        "1": 2,
+        "2": 240,
+        "3": 60,
+        "6": 12
+      },
+      "date": "2026-11-19 07:55:25"
+    },
+    {
+      "identifiant": 4,
+      "client_id": 1,
+      "lignes": {
+        "6": 3
+      },
+      "statut": "annulee",
+      "total": 288.0,
+      "besoins_debites": {
+        "1": 3,
+        "3": 150
+      },
+      "date": "2026-11-19 07:55:25"
+    },
+    {
+      "identifiant": 5,
+      "client_id": 2,
+      "lignes": {
+        "6": 1
+      },
+      "statut": "brouillon",
+      "total": 0.0,
+      "besoins_debites": {},
+      "date": "2026-11-19 07:55:25"
+    }
+  ],
+  "historique": [
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Pain (stock 40 unité)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Poulet (stock 3000 g)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Fromage (stock 1500 g)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Oeufs (stock 60 unité)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Lait (stock 8000 ml)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Café moulu (stock 210 g)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Sucre (stock 2000 g)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Farine (stock 5000 g)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Ingrédient ajouté : Oranges (stock 50 unité)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Produit ajouté : Sandwich poulet (175)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Produit ajouté : Omelette (125)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Produit ajouté : Café au lait (75)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Produit ajouté : Crêpe (90)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Produit ajouté : Jus d'orange (60)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Produit ajouté : Sandwich fromage (120)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Client ajouté : Marie Joseph (etudiant)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Client ajouté : Jean Pierre (etudiant)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Client ajouté : Claire Louis (personnel)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°1 créée pour Marie Joseph"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°1 validée (total 340.0)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°1 prête"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°1 livrée"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°2 créée pour Jean Pierre"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°2 validée (total 196.0)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°2 prête"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°3 créée pour Claire Louis"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°3 validée (total 706.5)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°4 créée pour Marie Joseph"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°4 validée (total 288.0)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°4 annulée (stock recrédité)"
+    },
+    {
+      "date": "2026-11-19 07:55:25",
+      "message": "Commande n°5 créée pour Jean Pierre"
+    }
+  ]
+}
