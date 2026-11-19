@@ -1,7 +1,7 @@
 # Gestion d'une cafétéria universitaire
 
 Mini-projet Python : application de gestion en console (programmation orientée objet, sauvegarde JSON).
-
+Participant : Olivier Sébastien Shyneider
 ## Fonctionnalités
 
 - Gestion des ingrédients, des stocks, du réapprovisionnement et des alertes de stock.
