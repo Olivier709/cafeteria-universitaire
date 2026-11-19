@@ -28,7 +28,7 @@ def sauvegarder(cafeteria, chemin):
 def charger(chemin):
     """Retourne une Cafeteria.
     - Fichier absent (premier lancement) : retourne une cafétéria vide.
-    - Fichier invalide : lève ErreurFichier SANS toucher au fichier."""
+    - Fichier invalide : lève ErreurFichier SANS toucher au fichier.""
     if not os.path.exists(chemin):
         return Cafeteria()
     try:
