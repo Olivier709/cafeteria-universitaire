@@ -1,7 +1,7 @@
 """
 stockage.py
 -----------
-Sauvegarde et chargement des données dans un fichier JSON...
+Sauvegarde et chargement des données dans un fichier JSON.
 """
 
 import json
